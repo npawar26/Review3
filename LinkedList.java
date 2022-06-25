@@ -25,8 +25,10 @@ public class LinkedList
 		}
 		
 	}
+	
 	public void show()
 	{
+		System.out.println("Linked list elements =>");
 		Node node = head;
 		
 		while(node.next!=null)
@@ -36,6 +38,8 @@ public class LinkedList
 		}
 		System.out.println(node.data);
 	}
+	
+	
 	public int search(int element)
 	{
 	    if (head == null) {

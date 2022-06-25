@@ -20,14 +20,14 @@ public class Demo3 {
 		int c=sc.nextInt();
 		list.insert(c);
 
-
 		list.show();
 
 		System.out.println("Enter element to search in linkedlist");
 		int d=sc.nextInt();
+		sc.close();
 
 		int ans = list.search(d);
-		if (ans == d) {
+		if (ans == -1) {
 			System.out.println(
 					"Element not found in the Linked List");
 		}
